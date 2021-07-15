@@ -18,6 +18,7 @@ module.exports = (async () => {
       process.env.AWS_SECRETKEY = awsCredentials.secretkey;
       process.env.BUCKETNAME = lampsettings.bucketname;
       process.env.LDAPConnection = lampsettings.ldapconnection;
+      process.env.ADMINKEY = lampsettings.adminkey;
     } catch (error) {
       console.error(error);
     }

@@ -21,6 +21,8 @@ ARG BUCKETNAME
 ENV BUCKETNAME ${BUCKETNAME}
 ARG LDAPConnection
 ENV LDAPConnection ${LDAPConnection}
+ARG ADMINKEY
+ENV ADMINKEY ${ADMINKEY}
 ENV API_NAME=lancs-lamp-api, AWSREGION=eu-west-2
 WORKDIR /usr/src/app
 COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
