@@ -2,17 +2,10 @@
 const async = require("async");
 const pool = require("../config/database").pool;
 
-module.exports.sendNegativeReminders = function (occupations, pathways, jwt, callback) {
-  const geoquery =
-    `SELECT pdata.*, previous_test_id, logs.id AS logid FROM public.pathway_data_collected as pdata LEFT OUTER JOIN public.pathway_reminders_log as logs
+module.exports.sendNegativeReminders = function (jwt, callback) {
+  const geoquery = `SELECT pdata.*, previous_test_id, logs.id AS logid FROM public.pathway_data_collected as pdata LEFT OUTER JOIN public.pathway_reminders_log as logs
   ON pdata.id = logs.previous_test_id
-  WHERE pdata.pathwayid IN (` +
-    pathways.join(",") +
-    `)
-  AND pdata.occupation IN ('` +
-    occupations.join("','") +
-    `')
-  AND pdata.result = 'NEGATIVE'
+  WHERE pdata.result = 'NEGATIVE'
   AND logs."reminderDT" IS NULL
   AND pdata."requestedDT" BETWEEN current_date - 7 AND current_date - 6
   AND pdata.nhs_number NOT IN (SELECT nhs_number FROM public.pathway_data_collected WHERE nhs_number IS NOT NULL AND "requestedDT" > current_date - 6)`;
@@ -58,17 +51,10 @@ const logReminder = function (pathwayItem, remindertype, callback) {
   });
 };
 
-module.exports.sendPositiveReminders = function (occupations, pathways, jwt, callback) {
-  const geoquery =
-    `SELECT pdata.*, previous_test_id, logs.id AS logid FROM public.pathway_data_collected as pdata LEFT OUTER JOIN public.pathway_reminders_log as logs
+module.exports.sendPositiveReminders = function (jwt, callback) {
+  const geoquery = `SELECT pdata.*, previous_test_id, logs.id AS logid FROM public.pathway_data_collected as pdata LEFT OUTER JOIN public.pathway_reminders_log as logs
   ON pdata.id = logs.previous_test_id
-  WHERE pdata.pathwayid IN (` +
-    pathways.join(",") +
-    `)
-    AND pdata.occupation IN ('` +
-    occupations.join("','") +
-    `')
-  AND pdata.result = 'POSITIVE'
+  WHERE pdata.result = 'POSITIVE'
   AND logs."reminderDT" IS NULL
   AND pdata."requestedDT" BETWEEN current_date - 28 AND current_date - 27
   AND pdata.nhs_number NOT IN (SELECT nhs_number FROM public.pathway_data_collected WHERE nhs_number IS NOT NULL AND "requestedDT" > current_date - 27)`;

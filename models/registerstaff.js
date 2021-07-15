@@ -3,8 +3,8 @@ const pool = require("../config/database").pool;
 const tablename = "registeredstaff";
 
 module.exports.addResource = function (resource, callback) {
-  const values = [resource.name, resource.email, resource.username, resource.hipres_access];
-  const geoquery = `INSERT INTO public.` + tablename + `(name, email, username, hipres_access) VALUES ($1, $2, $3, $4) RETURNING *`;
+  const values = [resource.name, resource.email, resource.username, resource.lamp_access];
+  const geoquery = `INSERT INTO public.` + tablename + `(name, email, username, lamp_access) VALUES ($1, $2, $3, $4) RETURNING *`;
   pool.query(geoquery, values, callback);
 };
 

@@ -1,7 +1,7 @@
 version: "2.1"
 
 services:
-  api-hipres:
+  lancs-lamp-api:
     image: lancs-lamp-api
     build: .
     environment:

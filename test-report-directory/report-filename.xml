@@ -1,11 +1,453 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="2" failures="0" errors="0" time="6.731">
-  <testsuite name="Test the root path" errors="0" failures="0" skipped="0" timestamp="2021-07-15T20:32:18" time="4.228" tests="1">
-    <testcase classname="Test the root path It should check the invalid endpoint as a standard Health Check" name="Test the root path It should check the invalid endpoint as a standard Health Check" time="0.054">
+<testsuites name="jest tests" tests="223" failures="0" errors="0" time="11.428">
+  <testsuite name="Test the root path" errors="0" failures="0" skipped="0" timestamp="2021-07-15T21:31:49" time="7.277" tests="1">
+    <testcase classname="Test the root path It should check the invalid endpoint as a standard Health Check" name="Test the root path It should check the invalid endpoint as a standard Health Check" time="0.048">
     </testcase>
   </testsuite>
-  <testsuite name="Test the root path" errors="0" failures="0" skipped="0" timestamp="2021-07-15T20:32:22" time="1.485" tests="1">
-    <testcase classname="Test the root path It should check the invalid endpoint as a standard Health Check" name="Test the root path It should check the invalid endpoint as a standard Health Check" time="0.028">
+  <testsuite name="Test the Security of All Protected Endpoints" errors="0" failures="0" skipped="0" timestamp="2021-07-15T21:31:56" time="2.921" tests="222">
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /pathlabs/getAll" name="Test the Security of All Protected Endpoints Checking endpoint secured: /pathlabs/getAll" time="0.027">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /pathlabs/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /pathlabs/getAll" time="0.011">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /pathlabs/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /pathlabs/getAll" time="0.009">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /pathlabs/register" name="Test the Security of All Protected Endpoints Checking endpoint secured: /pathlabs/register" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /pathlabs/register" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /pathlabs/register" time="0.011">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /pathlabs/register" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /pathlabs/register" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /pathlabs/update" name="Test the Security of All Protected Endpoints Checking endpoint secured: /pathlabs/update" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /pathlabs/update" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /pathlabs/update" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /pathlabs/update" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /pathlabs/update" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /pathlabs/remove" name="Test the Security of All Protected Endpoints Checking endpoint secured: /pathlabs/remove" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /pathlabs/remove" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /pathlabs/remove" time="0.009">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /pathlabs/remove" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /pathlabs/remove" time="0.009">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /pathlabs/getlab" name="Test the Security of All Protected Endpoints Checking endpoint secured: /pathlabs/getlab" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /pathlabs/getlab" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /pathlabs/getlab" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /pathlabs/getlab" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /pathlabs/getlab" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /testcentre/getAll" name="Test the Security of All Protected Endpoints Checking endpoint secured: /testcentre/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /testcentre/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /testcentre/getAll" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /testcentre/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /testcentre/getAll" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /testcentre/register" name="Test the Security of All Protected Endpoints Checking endpoint secured: /testcentre/register" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /testcentre/register" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /testcentre/register" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /testcentre/register" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /testcentre/register" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /testcentre/update" name="Test the Security of All Protected Endpoints Checking endpoint secured: /testcentre/update" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /testcentre/update" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /testcentre/update" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /testcentre/update" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /testcentre/update" time="0.009">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /testcentre/remove" name="Test the Security of All Protected Endpoints Checking endpoint secured: /testcentre/remove" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /testcentre/remove" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /testcentre/remove" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /testcentre/remove" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /testcentre/remove" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /testcentre/gettestcentre" name="Test the Security of All Protected Endpoints Checking endpoint secured: /testcentre/gettestcentre" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /testcentre/gettestcentre" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /testcentre/gettestcentre" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /testcentre/gettestcentre" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /testcentre/gettestcentre" time="0.009">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /testcentre/getOpenTestCentres" name="Test the Security of All Protected Endpoints Checking endpoint secured: /testcentre/getOpenTestCentres" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /testcentre/getOpenTestCentres" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /testcentre/getOpenTestCentres" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /testcentre/getOpenTestCentres" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /testcentre/getOpenTestCentres" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /lamp90/resultsfile" name="Test the Security of All Protected Endpoints Checking endpoint secured: /lamp90/resultsfile" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lamp90/resultsfile" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lamp90/resultsfile" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lamp90/resultsfile" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lamp90/resultsfile" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /lamp90/getByWellID" name="Test the Security of All Protected Endpoints Checking endpoint secured: /lamp90/getByWellID" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lamp90/getByWellID" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lamp90/getByWellID" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lamp90/getByWellID" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lamp90/getByWellID" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /lamp90/getPositives" name="Test the Security of All Protected Endpoints Checking endpoint secured: /lamp90/getPositives" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lamp90/getPositives" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lamp90/getPositives" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lamp90/getPositives" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lamp90/getPositives" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /lamp90/getAll" name="Test the Security of All Protected Endpoints Checking endpoint secured: /lamp90/getAll" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lamp90/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lamp90/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lamp90/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lamp90/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /pathwaydata/getByOccupation" name="Test the Security of All Protected Endpoints Checking endpoint secured: /pathwaydata/getByOccupation" time="0.006">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /pathwaydata/getByOccupation" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /pathwaydata/getByOccupation" time="0.009">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /pathwaydata/getByOccupation" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /pathwaydata/getByOccupation" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /pathwaydata/getByOccupationAndTime" name="Test the Security of All Protected Endpoints Checking endpoint secured: /pathwaydata/getByOccupationAndTime" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /pathwaydata/getByOccupationAndTime" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /pathwaydata/getByOccupationAndTime" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /pathwaydata/getByOccupationAndTime" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /pathwaydata/getByOccupationAndTime" time="0.006">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /pathwaydata/getPositives" name="Test the Security of All Protected Endpoints Checking endpoint secured: /pathwaydata/getPositives" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /pathwaydata/getPositives" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /pathwaydata/getPositives" time="0.006">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /pathwaydata/getPositives" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /pathwaydata/getPositives" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /pathwaydata/getAll" name="Test the Security of All Protected Endpoints Checking endpoint secured: /pathwaydata/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /pathwaydata/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /pathwaydata/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /pathwaydata/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /pathwaydata/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /registerstaff/getAll" name="Test the Security of All Protected Endpoints Checking endpoint secured: /registerstaff/getAll" time="0.006">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /registerstaff/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /registerstaff/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /registerstaff/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /registerstaff/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /registerstaff/register" name="Test the Security of All Protected Endpoints Checking endpoint secured: /registerstaff/register" time="0.006">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /registerstaff/register" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /registerstaff/register" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /registerstaff/register" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /registerstaff/register" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /registerstaff/remove" name="Test the Security of All Protected Endpoints Checking endpoint secured: /registerstaff/remove" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /registerstaff/remove" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /registerstaff/remove" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /registerstaff/remove" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /registerstaff/remove" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /registerstaff/getByEmail" name="Test the Security of All Protected Endpoints Checking endpoint secured: /registerstaff/getByEmail" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /registerstaff/getByEmail" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /registerstaff/getByEmail" time="0.006">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /registerstaff/getByEmail" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /registerstaff/getByEmail" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /registerstaff/getByUsername" name="Test the Security of All Protected Endpoints Checking endpoint secured: /registerstaff/getByUsername" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /registerstaff/getByUsername" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /registerstaff/getByUsername" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /registerstaff/getByUsername" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /registerstaff/getByUsername" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /registerstaff/updateHealthInfo" name="Test the Security of All Protected Endpoints Checking endpoint secured: /registerstaff/updateHealthInfo" time="0.006">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /registerstaff/updateHealthInfo" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /registerstaff/updateHealthInfo" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /registerstaff/updateHealthInfo" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /registerstaff/updateHealthInfo" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /registerstaff/loadHealthInfo" name="Test the Security of All Protected Endpoints Checking endpoint secured: /registerstaff/loadHealthInfo" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /registerstaff/loadHealthInfo" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /registerstaff/loadHealthInfo" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /registerstaff/loadHealthInfo" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /registerstaff/loadHealthInfo" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /results/processrejections" name="Test the Security of All Protected Endpoints Checking endpoint secured: /results/processrejections" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /results/processrejections" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /results/processrejections" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /results/processrejections" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /results/processrejections" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /results/update" name="Test the Security of All Protected Endpoints Checking endpoint secured: /results/update" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /results/update" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /results/update" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /results/update" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /results/update" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /staffconsent/getAll" name="Test the Security of All Protected Endpoints Checking endpoint secured: /staffconsent/getAll" time="0.006">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffconsent/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffconsent/getAll" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffconsent/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffconsent/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /staffconsent/register" name="Test the Security of All Protected Endpoints Checking endpoint secured: /staffconsent/register" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffconsent/register" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffconsent/register" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffconsent/register" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffconsent/register" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /staffconsent/remove" name="Test the Security of All Protected Endpoints Checking endpoint secured: /staffconsent/remove" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffconsent/remove" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffconsent/remove" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffconsent/remove" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffconsent/remove" time="0.006">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /staffconsent/getByNHSNumber" name="Test the Security of All Protected Endpoints Checking endpoint secured: /staffconsent/getByNHSNumber" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffconsent/getByNHSNumber" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffconsent/getByNHSNumber" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffconsent/getByNHSNumber" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffconsent/getByNHSNumber" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /staffconsent/update" name="Test the Security of All Protected Endpoints Checking endpoint secured: /staffconsent/update" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffconsent/update" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffconsent/update" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffconsent/update" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffconsent/update" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /testrequests/getAll" name="Test the Security of All Protected Endpoints Checking endpoint secured: /testrequests/getAll" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /testrequests/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /testrequests/getAll" time="0.006">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /testrequests/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /testrequests/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /testrequests/getMyTests" name="Test the Security of All Protected Endpoints Checking endpoint secured: /testrequests/getMyTests" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /testrequests/getMyTests" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /testrequests/getMyTests" time="0.009">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /testrequests/getMyTests" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /testrequests/getMyTests" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /testrequests/getTestsByNHSNumber" name="Test the Security of All Protected Endpoints Checking endpoint secured: /testrequests/getTestsByNHSNumber" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /testrequests/getTestsByNHSNumber" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /testrequests/getTestsByNHSNumber" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /testrequests/getTestsByNHSNumber" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /testrequests/getTestsByNHSNumber" time="0.006">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /training/getAll" name="Test the Security of All Protected Endpoints Checking endpoint secured: /training/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /training/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /training/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /training/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /training/getAll" time="0.009">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /training/completeTraining" name="Test the Security of All Protected Endpoints Checking endpoint secured: /training/completeTraining" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /training/completeTraining" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /training/completeTraining" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /training/completeTraining" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /training/completeTraining" time="0.006">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /training/isTrainingComplete" name="Test the Security of All Protected Endpoints Checking endpoint secured: /training/isTrainingComplete" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /training/isTrainingComplete" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /training/isTrainingComplete" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /training/isTrainingComplete" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /training/isTrainingComplete" time="0.006">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /trainingresources/getAll" name="Test the Security of All Protected Endpoints Checking endpoint secured: /trainingresources/getAll" time="0.009">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /trainingresources/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /trainingresources/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /trainingresources/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /trainingresources/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /trainingresources/register" name="Test the Security of All Protected Endpoints Checking endpoint secured: /trainingresources/register" time="0.006">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /trainingresources/register" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /trainingresources/register" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /trainingresources/register" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /trainingresources/register" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /trainingresources/remove" name="Test the Security of All Protected Endpoints Checking endpoint secured: /trainingresources/remove" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /trainingresources/remove" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /trainingresources/remove" time="0.009">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /trainingresources/remove" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /trainingresources/remove" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /reminders/lamp90/staffreminders" name="Test the Security of All Protected Endpoints Checking endpoint secured: /reminders/lamp90/staffreminders" time="0.006">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /reminders/lamp90/staffreminders" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /reminders/lamp90/staffreminders" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /reminders/lamp90/staffreminders" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /reminders/lamp90/staffreminders" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /reminders/lamp90/stafffollowsups" name="Test the Security of All Protected Endpoints Checking endpoint secured: /reminders/lamp90/stafffollowsups" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /reminders/lamp90/stafffollowsups" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /reminders/lamp90/stafffollowsups" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /reminders/lamp90/stafffollowsups" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /reminders/lamp90/stafffollowsups" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/getOccupations" name="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/getOccupations" time="0.006">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/getOccupations" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/getOccupations" time="0.009">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/getOccupations" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/getOccupations" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/getCensusOccupations" name="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/getCensusOccupations" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/getCensusOccupations" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/getCensusOccupations" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/getCensusOccupations" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/getCensusOccupations" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/getEthnicities" name="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/getEthnicities" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/getEthnicities" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/getEthnicities" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/getEthnicities" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/getEthnicities" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/register_ethnicity" name="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/register_ethnicity" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/register_ethnicity" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/register_ethnicity" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/register_ethnicity" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/register_ethnicity" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/register_occupation" name="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/register_occupation" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/register_occupation" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/register_occupation" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/register_occupation" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/register_occupation" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/register_census_occupation" name="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/register_census_occupation" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/register_census_occupation" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/register_census_occupation" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/register_census_occupation" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/register_census_occupation" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/update_ethnicity" name="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/update_ethnicity" time="0.009">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/update_ethnicity" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/update_ethnicity" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/update_ethnicity" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/update_ethnicity" time="0.009">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/update_occupation" name="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/update_occupation" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/update_occupation" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/update_occupation" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/update_occupation" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/update_occupation" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/update_census_occupation" name="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/update_census_occupation" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/update_census_occupation" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/update_census_occupation" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/update_census_occupation" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/update_census_occupation" time="0.009">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/remove_ethnicity" name="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/remove_ethnicity" time="0.006">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/remove_ethnicity" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/remove_ethnicity" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/remove_ethnicity" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/remove_ethnicity" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/remove_occupation" name="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/remove_occupation" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/remove_occupation" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/remove_occupation" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/remove_occupation" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/remove_occupation" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/remove_census_occupation" name="Test the Security of All Protected Endpoints Checking endpoint secured: /lists/remove_census_occupation" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/remove_census_occupation" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /lists/remove_census_occupation" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/remove_census_occupation" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /lists/remove_census_occupation" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /orgstructures/getAll" name="Test the Security of All Protected Endpoints Checking endpoint secured: /orgstructures/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /orgstructures/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /orgstructures/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /orgstructures/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /orgstructures/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /orgstructures/register" name="Test the Security of All Protected Endpoints Checking endpoint secured: /orgstructures/register" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /orgstructures/register" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /orgstructures/register" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /orgstructures/register" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /orgstructures/register" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /orgstructures/update" name="Test the Security of All Protected Endpoints Checking endpoint secured: /orgstructures/update" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /orgstructures/update" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /orgstructures/update" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /orgstructures/update" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /orgstructures/update" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /orgstructures/remove" name="Test the Security of All Protected Endpoints Checking endpoint secured: /orgstructures/remove" time="0.006">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /orgstructures/remove" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /orgstructures/remove" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /orgstructures/remove" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /orgstructures/remove" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /orgstructures/getbyorg" name="Test the Security of All Protected Endpoints Checking endpoint secured: /orgstructures/getbyorg" time="0.006">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /orgstructures/getbyorg" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /orgstructures/getbyorg" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /orgstructures/getbyorg" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /orgstructures/getbyorg" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /staffarea/getAll" name="Test the Security of All Protected Endpoints Checking endpoint secured: /staffarea/getAll" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffarea/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffarea/getAll" time="0.009">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffarea/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffarea/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /staffarea/register" name="Test the Security of All Protected Endpoints Checking endpoint secured: /staffarea/register" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffarea/register" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffarea/register" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffarea/register" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffarea/register" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /staffarea/update" name="Test the Security of All Protected Endpoints Checking endpoint secured: /staffarea/update" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffarea/update" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffarea/update" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffarea/update" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffarea/update" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /staffarea/remove" name="Test the Security of All Protected Endpoints Checking endpoint secured: /staffarea/remove" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffarea/remove" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffarea/remove" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffarea/remove" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffarea/remove" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /staffarea/getbyorg" name="Test the Security of All Protected Endpoints Checking endpoint secured: /staffarea/getbyorg" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffarea/getbyorg" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffarea/getbyorg" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffarea/getbyorg" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffarea/getbyorg" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /staffarea/getbyarea" name="Test the Security of All Protected Endpoints Checking endpoint secured: /staffarea/getbyarea" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffarea/getbyarea" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffarea/getbyarea" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffarea/getbyarea" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffarea/getbyarea" time="0.009">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /staffarea/getbynhsnumber" name="Test the Security of All Protected Endpoints Checking endpoint secured: /staffarea/getbynhsnumber" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffarea/getbynhsnumber" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /staffarea/getbynhsnumber" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffarea/getbynhsnumber" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /staffarea/getbynhsnumber" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /orgacknowledgements/getAll" name="Test the Security of All Protected Endpoints Checking endpoint secured: /orgacknowledgements/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /orgacknowledgements/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /orgacknowledgements/getAll" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /orgacknowledgements/getAll" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /orgacknowledgements/getAll" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /orgacknowledgements/register" name="Test the Security of All Protected Endpoints Checking endpoint secured: /orgacknowledgements/register" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /orgacknowledgements/register" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /orgacknowledgements/register" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /orgacknowledgements/register" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /orgacknowledgements/register" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /orgacknowledgements/remove" name="Test the Security of All Protected Endpoints Checking endpoint secured: /orgacknowledgements/remove" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /orgacknowledgements/remove" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /orgacknowledgements/remove" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /orgacknowledgements/remove" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /orgacknowledgements/remove" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /orgacknowledgements/getbyorg" name="Test the Security of All Protected Endpoints Checking endpoint secured: /orgacknowledgements/getbyorg" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /orgacknowledgements/getbyorg" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /orgacknowledgements/getbyorg" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /orgacknowledgements/getbyorg" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /orgacknowledgements/getbyorg" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /labdata/getAllLabReceipts" name="Test the Security of All Protected Endpoints Checking endpoint secured: /labdata/getAllLabReceipts" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /labdata/getAllLabReceipts" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /labdata/getAllLabReceipts" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /labdata/getAllLabReceipts" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /labdata/getAllLabReceipts" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint secured: /labdata/getAllRejectionReasons" name="Test the Security of All Protected Endpoints Checking endpoint secured: /labdata/getAllRejectionReasons" time="0.008">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /labdata/getAllRejectionReasons" name="Test the Security of All Protected Endpoints Checking endpoint rejects forged JWT: /labdata/getAllRejectionReasons" time="0.007">
+    </testcase>
+    <testcase classname="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /labdata/getAllRejectionReasons" name="Test the Security of All Protected Endpoints Checking endpoint rejects expired JWT: /labdata/getAllRejectionReasons" time="0.007">
     </testcase>
   </testsuite>
 </testsuites>

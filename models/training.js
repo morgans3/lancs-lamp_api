@@ -4,7 +4,7 @@ const tablename = "registeredstaff";
 
 module.exports.addResource = function (resource, callback) {
   const values = [resource.username, resource.agreedterms, resource.roleselected, resource.email, resource.organisation, resource.name];
-  const geoquery = `INSERT INTO public.` + tablename + `(username, hipres_access, roleselected, email, organisation, name) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *`;
+  const geoquery = `INSERT INTO public.` + tablename + `(username, lamp_access, roleselected, email, organisation, name) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *`;
   pool.query(geoquery, values, callback);
 };
 
