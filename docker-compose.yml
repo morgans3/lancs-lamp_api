@@ -1,0 +1,10 @@
+version: "2.1"
+
+services:
+  api-hipres:
+    image: lancs-lamp-api
+    build: .
+    environment:
+      API_NAME: "lancs-lamp-api"
+    ports:
+      - 8099:8099

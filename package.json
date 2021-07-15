@@ -1,0 +1,66 @@
+{
+  "name": "lancs-lamp-api",
+  "main": "server.js",
+  "version": "1.0.0",
+  "engines": {
+    "node": "~10.13",
+    "npm": "~6"
+  },
+  "scripts": {
+    "start": "node server",
+    "start:dev": "set DEV=true && node server",
+    "test": "jest tests --runInBand --detectOpenHandles",
+    "test-coverage": "jest tests --coverage --runInBand --detectOpenHandles"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/jest/setEnvVars.js"
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "html"
+    ],
+    "reporters": [
+      "default",
+      [
+        "jest-junit",
+        {
+          "outputDirectory": "test-report-directory",
+          "outputName": "report-filename.xml"
+        }
+      ]
+    ]
+  },
+  "dependencies": {
+    "activedirectory": "^0.7.2",
+    "bcryptjs": "~2.4.3",
+    "body-parser": "~1.19.0",
+    "cors": "~2.8.5",
+    "crossfilter": "^1.3.12",
+    "csv-parse": "^4.12.0",
+    "diu-data-functions": "^1.0.1",
+    "express": "~4.17.1",
+    "jsonwebtoken": "~8.5.1",
+    "morgan": "~1.10.0",
+    "passport": "^0.4.1",
+    "passport-activedirectory": "^1.0.4",
+    "passport-jwt": "~4.0.0",
+    "pg": "^8.5.1",
+    "pg-mapper": "0.0.1",
+    "pg-types": "^3.0.1",
+    "request": "^2.88.2",
+    "swagger-jsdoc": "^6.0.1",
+    "swagger-ui-express": "^4.1.6",
+    "winston": "^3.3.3",
+    "winston-aws-cloudwatch": "^3.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "8.2.0",
+    "@aws-sdk/client-secrets-manager": "^3.2.0",
+    "@types/jest": "^26.0.20",
+    "jest": "^26.6.3",
+    "jest-junit": "^12.0.0",
+    "nodemon": "^2.0.7",
+    "supertest": "^6.0.1"
+  }
+}

@@ -1,0 +1,19 @@
+version: "2.1"
+
+services:
+  lancs-lamp-api:
+    image: lancs-lamp-api
+    network_mode: "host"
+    build: .
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - PGPORT=5433 # The postgreSQL port available locally after tunnelling
+      - DEV="true"
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_DEFAULT_REGION=${AWS_DEFAULT_REGION}
+    ports:
+      - 8099:8099
+      - 9229:9229
+    command: node_modules/.bin/nodemon --inspect=0.0.0.0:9229 server.js
