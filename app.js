@@ -30,6 +30,7 @@ const lists = require("./routes/lists");
 const staffarea = require("./routes/staffarea");
 const orgacknowledgements = require("./routes/orgacknowledgements");
 const labdata = require("./routes/labdata");
+const users = require("./routes/users");
 
 // SWAGGER SETUP
 const swaggerJSDoc = require("swagger-jsdoc");
@@ -154,6 +155,7 @@ app.use("/staffarea", staffarea);
 app.use("/orgacknowledgements", orgacknowledgements);
 app.use("/labdata", labdata);
 app.use("/lists", lists);
+app.use("/users", users);
 app.use(passport.initialize());
 app.use(passport.session());
 require("./config/passport")(passport);
